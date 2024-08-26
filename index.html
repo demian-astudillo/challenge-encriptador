@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\style.css">
     <title>Encriptador</title>
 </head>
-<body>
+<body class="body">
     <header>
         <nav>
             <a>Acerca de mí</a>
@@ -14,19 +15,25 @@
     </header>
     <main>
         <div>
-            <h1>Encriptador de Texto</h1>
+            
         </div>
-        <div>
-            <h2>Ingrese una frase</h2>
-            <input type="text" id="entrada_texto" onkeydown="return /[a-zA-Z ]/i.test(event.key)">
+        <div class="container_1">
+            <div>
+                <h1>Encriptador de Texto</h1>
+            </div>
+            <div>
+                <h2>Ingrese una frase</h2>
+                <input type="text" id="entrada_texto" onkeydown="return /[a-zA-Z ]/i.test(event.key)">
+            </div>
+            <div>
+                <button onclick="encriptar_texto();">Encriptar</button>
+                <button onclick="desencriptar_texto();">Desencriptar</button>
+            </div>
         </div>
-        <div>
-            <button onclick="encriptar_texto();">Encriptar</button>
-            <button onclick="desencriptar_texto();">Desencriptar</button>
-        </div>
+
         <div>
             <h3>Texto de Salida</h3>
-            <p>Todavía no hay texto</p>
+            <p id="caja_salida">Todavía no hay texto</p>
         </div>
     </main>
     <footer>

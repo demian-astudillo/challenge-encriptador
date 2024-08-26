@@ -8,36 +8,37 @@
 </head>
 <body class="body">
     <header>
-        <nav>
+        <nav class="nav">
+            <img src="assets/manchas.jpg" class="manchas">
             <a>Acerca de mí</a>
             <a>Fede</a>
         </nav>
     </header>
-    <main>
-        <div>
-            
-        </div>
-        <div class="container_1">
-            <div>
-                <h1>Encriptador de Texto</h1>
+    <main class="main">
+        <section class="container_master">
+            <div class="container_1">
+                <div>
+                    <h1>Encriptador de Texto</h1>
+                    <input type="text" id="entrada_texto" onkeydown="return /[a-zA-Z ]/i.test(event.key)" value="ingrese su texto aqu">
+                </div>
+                <div>
+                    <div>
+                        <label for="boton_1">Ingresar sólamente minúsculas y sin tílde</label>
+                    </div>
+                    <div>
+                        <button id="boton_1" onclick="encriptar_texto();">Encriptar</button>
+                        <button onclick="desencriptar_texto();">Desencriptar</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h2>Ingrese una frase</h2>
-                <input type="text" id="entrada_texto" onkeydown="return /[a-zA-Z ]/i.test(event.key)">
+            <div class="container_2">
+                <h2>Texto de Salida</h2>
+                <p id="caja_salida">Todavía no hay texto</p>
             </div>
-            <div>
-                <button onclick="encriptar_texto();">Encriptar</button>
-                <button onclick="desencriptar_texto();">Desencriptar</button>
-            </div>
-        </div>
-
-        <div>
-            <h3>Texto de Salida</h3>
-            <p id="caja_salida">Todavía no hay texto</p>
-        </div>
+        </section>
     </main>
     <footer>
-        <h4>Desarrollado por Demian Astudillo</h4>
+        <h3>Desarrollado por Demian Astudillo</h3>
     </footer>
     <script src="app.js"></script>
 </body>

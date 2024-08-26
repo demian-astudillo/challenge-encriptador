@@ -19,15 +19,15 @@
             <div class="container_1">
                 <div>
                     <h1>Encriptador de Texto</h1>
-                    <input type="text" id="entrada_texto" onkeydown="return /[a-zA-Z ]/i.test(event.key)" value="ingrese su texto aqu">
+                    <input type="text" aria-label="Entrada" class="entrada" id="entrada_texto" onkeydown="return /[a-zA-Z ]/i.test(event.key)" value="ingrese su texto aqu">
                 </div>
                 <div>
                     <div>
                         <label for="boton_1">Ingresar sólamente minúsculas y sin tílde</label>
                     </div>
                     <div>
-                        <button id="boton_1" onclick="encriptar_texto();">Encriptar</button>
-                        <button onclick="desencriptar_texto();">Desencriptar</button>
+                        <button id="boton_1" class="boton_1" onclick="encriptar_texto();">Encriptar</button>
+                        <button class="boton_2" onclick="desencriptar_texto();">Desencriptar</button>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
         </section>
     </main>
     <footer>
-        <h3>Desarrollado por Demian Astudillo</h3>
+        <p>Desarrollado por Demian Astudillo</p>
     </footer>
     <script src="app.js"></script>
 </body>

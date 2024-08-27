@@ -18,11 +18,12 @@
         <section class="container_master">
             <div class="container_1">
                 <div>
-                    <h1>Encriptador de Texto</h1>
-                    <input type="text" aria-label="Entrada" class="entrada" id="entrada_texto" onkeydown="return /[a-zA-Z ]/i.test(event.key)" value="ingrese su texto aqu">
+                    <h1 class="titulo_entrada">Encriptador de Texto</h1>
+                    <input type="text" class="entrada" id="entrada_texto" onkeydown="return /[a-zA-Z ]/i.test(event.key)" value="Ingrese su texto aquí" placeholder="Ingrese su texto aquí">
                 </div>
                 <div>
                     <div>
+                        <
                         <label for="boton_1">Ingresar sólamente minúsculas y sin tílde</label>
                     </div>
                     <div>
@@ -32,8 +33,11 @@
                 </div>
             </div>
             <div class="container_2">
-                <h2>Texto de Salida</h2>
-                <p id="caja_salida">Todavía no hay texto</p>
+                <h2 class="titulo_salida">Texto de Salida</h2>
+                <img src="assets\cat.png">
+                <p id="caja_salida">
+                    No se ha enviado texto
+                </p>
             </div>
         </section>
     </main>

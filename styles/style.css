@@ -42,13 +42,20 @@
     justify-content: space-between;
 }
 
+.titulo_entrada{
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+}
+
 .entrada{
     border: none;
     border-color: transparent;
     background-color: #F3F5FC;
     width: 300px;
     height: 300px
-    
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
 }
 
 .container_2{
@@ -57,8 +64,23 @@
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    border-radius: 30px;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 5%;
+    padding-right: 5%;
+
 }
 
+.titulo_salida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0A3871;
+    
+}
 .boton_1{
     border-radius: 20px;
     padding: 24px 24px;

@@ -1,8 +1,3 @@
-//La letra "e" es convertida para "enter"
-//La letra "i" es convertida para "imes"
-//La letra "a" es convertida para "ai"
-//La letra "o" es convertida para "ober"
-//La letra "u" es convertida para "ufat"
 
 function encriptar_texto(){
     let texto = document.getElementById('entrada_texto').value;
@@ -13,6 +8,7 @@ function encriptar_texto(){
     texto_encriptado = texto_encriptado.replace(/u/g, "ufat");
     let caja = document.querySelector("#caja_salida");
     caja.innerHTML = texto_encriptado;
+    document.getElementById('entrada_texto').setAttribute('value','');
 }
 
 function desencriptar_texto(){

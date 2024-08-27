@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-
-
-
 .body{
     background-color: #F3F5FC;
     display: flex;
@@ -52,7 +49,7 @@
     border: none;
     border-color: transparent;
     background-color: #F3F5FC;
-    width: 400px;
+    width: 375px;
     height: 300px;
     font-family: "Inter", sans-serif;
     font-size: 2rem;
@@ -61,7 +58,7 @@
 }
 
 .container_2{
-    width: 400px;
+    width: 375px;
     height: 500px;
     background-color: #FFFFFF;
     display: flex;
@@ -150,4 +147,36 @@
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     padding: 1%;
+}
+
+
+@media (max-width: 1200px) {
+
+    .container_master{
+        display: flex;
+        gap: 0px 100px;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .container_master{
+        display: flex;
+        gap: 0px 0px;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .container_master{
+        display: flex;
+        flex-direction: column;
+        gap: 0px 0px;
+
+    }
+    .cat{
+        display: none;
+    }
 }

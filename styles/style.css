@@ -133,3 +133,13 @@
     font-size: 16px;
     border-color: #0A3871;
 }
+
+.boton_3{
+    border-radius: 15px;
+    padding: 16px 16px;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border-color: rgb(32, 32, 32);
+}

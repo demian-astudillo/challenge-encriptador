@@ -14,6 +14,7 @@ function encriptar_texto(){
     document.getElementById('texto_1').setAttribute('style','display: none;');
     document.getElementById('texto_2').setAttribute('style','display: none;');
     document.getElementById('caja_salida').setAttribute('style','');
+    document.getElementById('boton_3').setAttribute('style','');
 }
 
 function desencriptar_texto(){
@@ -31,4 +32,11 @@ function desencriptar_texto(){
     document.getElementById('texto_1').setAttribute('style','display: none;');
     document.getElementById('texto_2').setAttribute('style','display: none;');
     document.getElementById('caja_salida').setAttribute('style','');
+    document.getElementById('boton_3').setAttribute('style','');
+}
+
+function copiar(){
+    let copiartext = document.getElementById('caja_salida')
+    copiartext.select();
+    document.execCommand("copy");
 }

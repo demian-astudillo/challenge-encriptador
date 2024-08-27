@@ -19,12 +19,12 @@
             <div class="container_1">
                 <div>
                     <h1 class="titulo_entrada">Encriptador de Texto</h1>
-                    <input type="text" class="entrada" id="entrada_texto" onkeydown="return /[a-zA-Z ]/i.test(event.key)" value="Ingrese su texto aquí" placeholder="Ingrese su texto aquí">
+                    <textarea class="entrada" id="entrada_texto" onkeydown="return /[a-zA-Z ]/i.test(event.key)" value="Ingrese su texto aquí" placeholder="Ingrese su texto aquí"></textarea>
                 </div>
                 <div>
                     <div>
-                        <
-                        <label for="boton_1">Ingresar sólamente minúsculas y sin tílde</label>
+                        <img src="assets/sign.png">
+                        <label for="boton_1" class="info">Ingresar sólamente minúsculas y sin tílde</label>
                     </div>
                     <div>
                         <button id="boton_1" class="boton_1" onclick="encriptar_texto();">Encriptar</button>
@@ -34,10 +34,10 @@
             </div>
             <div class="container_2">
                 <h2 class="titulo_salida">Texto de Salida</h2>
-                <img src="assets\cat.png">
-                <p id="caja_salida">
-                    No se ha enviado texto
-                </p>
+                <img id="cat" src="assets\cat.png">
+                <p id="texto_1" class="texto_1">Ningún Mensaje fue encontrado</p>
+                <p id="texto_2" class="texto_2">Ingresa el texto que desees encriptar o desencriptar</p>
+                <textarea class="caja_salida" id="caja_salida" style ='display: none;'></textarea>
             </div>
         </section>
     </main>

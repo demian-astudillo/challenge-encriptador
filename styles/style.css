@@ -21,7 +21,7 @@
 
 .manchas {
     height: 50px;
-    width: 68px;
+    width: 50px;
 }
 
 
@@ -33,7 +33,7 @@
 
 .container_master{
     display: flex;
-    gap: 0px 450px;
+    gap: 0px 300px;
 }
 
 .container_1{
@@ -52,10 +52,12 @@
     border: none;
     border-color: transparent;
     background-color: #F3F5FC;
-    width: 300px;
-    height: 300px
+    width: 400px;
+    height: 300px;
     font-family: "Inter", sans-serif;
     font-size: 32px;
+
+
 }
 
 .container_2{
@@ -71,15 +73,46 @@
     font-weight: 400;
     padding-left: 5%;
     padding-right: 5%;
+    box-shadow: 10px 10px 5px rgb(198, 217, 224);
 
 }
+.texto_1{
+    color: #343A40;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
 
+.texto_2{
+    color: #495057;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+}
 .titulo_salida{
     display: flex;
     align-items: center;
     justify-content: center;
     color: #0A3871;
     
+}
+
+.caja_salida{
+    border: none;
+    border-color: transparent;
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 300px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.info{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    border-color: #495057;
 }
 .boton_1{
     border-radius: 20px;
@@ -88,7 +121,7 @@
     color: #FFFFFF;
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    border-color: black;
+    border-color: rgb(32, 32, 32);
 }
 
 .boton_2{

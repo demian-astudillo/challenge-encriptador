@@ -8,7 +8,12 @@ function encriptar_texto(){
     texto_encriptado = texto_encriptado.replace(/u/g, "ufat");
     let caja = document.querySelector("#caja_salida");
     caja.innerHTML = texto_encriptado;
-    document.getElementById('entrada_texto').setAttribute('value','');
+    let entry = document.getElementById('entrada_texto');
+    entry.value = '';
+    document.getElementById('cat').setAttribute('style','display: none;');
+    document.getElementById('texto_1').setAttribute('style','display: none;');
+    document.getElementById('texto_2').setAttribute('style','display: none;');
+    document.getElementById('caja_salida').setAttribute('style','');
 }
 
 function desencriptar_texto(){
@@ -20,4 +25,10 @@ function desencriptar_texto(){
     texto_desencriptado = texto_desencriptado.replace(/ufat/g, "u");
     let caja = document.querySelector("#caja_salida");
     caja.innerHTML = texto_desencriptado;
+    let entry = document.getElementById('entrada_texto');
+    entry.value = '';
+    document.getElementById('cat').setAttribute('style','display: none;');
+    document.getElementById('texto_1').setAttribute('style','display: none;');
+    document.getElementById('texto_2').setAttribute('style','display: none;');
+    document.getElementById('caja_salida').setAttribute('style','');
 }

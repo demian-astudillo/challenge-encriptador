@@ -41,10 +41,3 @@ function copiar(){
     document.execCommand("copy");
 }
 
-var w = window.innerWidth;
-
-if (w <= 850)  {
-    document.getElementById('cat').setAttribute('style','display: none;');
-} else if (w > 850){
-    document.getElementById('boton_3').setAttribute('style','');
-}
